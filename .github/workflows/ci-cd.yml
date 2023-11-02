@@ -18,8 +18,8 @@ jobs:
       with:
         node-version: 14
 
-    - name: Install dependencies
-      run: npx ci
+    #- name: Install dependencies
+    #  run: npx ci
 
     - name: Run Linter
       run: npx run lint

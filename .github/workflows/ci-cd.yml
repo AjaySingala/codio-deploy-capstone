@@ -17,9 +17,12 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 14
+    
+    - name: Refresh dependencies
+      run: npm install
 
-    #- name: Install dependencies
-    #  run: npx ci
+    - name: Install dependencies
+      run: npx ci
 
     - name: Run Linter
       run: npx run lint
